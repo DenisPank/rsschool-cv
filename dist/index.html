@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SongBird</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top-panel">
+          <div class="header__logo-wrapper">
+            <img src="images/index.png" alt="Logo" class="header__logo-img" />
+          </div>
+          <div class="header__score">
+            <h5>Score: <span class="header__count">0</span></h5>
+          </div>
+        </div>
+        <div class="header__botton-panel">
+          <ul class="header__list">
+            <li class="header__item" data-task="0">
+              <a href="#" class="page-link">Разминка</a>
+            </li>
+            <li class="header__item" data-task="1">
+              <a href="#" class="page-link">Воробьиные</a>
+            </li>
+            <li class="header__item" data-task="2">
+              <a href="#" class="page-link">Лесные птицы</a>
+            </li>
+            <li class="header__item" data-task="3">
+              <a href="#" class="page-link">Певчие птицы</a>
+            </li>
+            <li class="header__item" data-task="4">
+              <a href="#" class="page-link">Хищные птицы</a>
+            </li>
+            <li class="header__item" data-task="5">
+              <a href="#" class="page-link">Морские птицы</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <section class="random" id="randomID">
+          <div class="container">
+            <div class="random__wrapper">
+              <div class="random__bird-wrapper">
+                <img
+                  src="images/bird.jpg"
+                  alt="Bird"
+                  class="random__bird-img"
+                  id="randomDirdImgID"
+                />
+              </div>
+              <div class="random__info-wrapper">
+                <h3 class="random__title" id="randomTitleID">******</h3>
+                <div class="random__audio-wrapper">
+                  <audio
+                    id="randomAudioID"
+                    controls
+                    src="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC517421-AB-004%20%282%29%20jemio%C5%82uszka.mp3"
+                  ></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="answer" id="answerID">
+          <div class="container">
+            <div class="answer__wrapper">
+              <div class="answer__list" id="answerListID">
+                <button class="answer__item">
+                  <span class="answer__option"></span></button>
+                </button>
+                <button class="answer__item"
+                  ><span class="answer__option"></span></button
+                ><button class="answer__item"
+                  ><span class="answer__option"></span></button
+                ><button class="answer__item"
+                  ><span class="answer__option"></span></button
+                ><button class="answer__item"
+                  ><span class="answer__option"></span></button
+                ><button class="answer__item"
+                  ><span class="answer__option"></span
+                ></button>
+                  </div>
+              <div class="answer__info-wrapper">
+                <div class="answer__info-random">
+                  <div class="answer__bird-wrapper">
+                    <img
+                      src="images/bird.06a46938.jpg"
+                      alt="Bird"
+                      class="answer__bird-img"
+                      id="answerBirdImgId"
+                    />
+                  </div>
+                  <div class="answer__info-bird-wrapper">
+                    <h3 class="answer__title" id="answerTitleID">******</h3>
+                    <h4 class="answer__latin" id="answerLatinId">
+                      Caprimulgus europaeus
+                    </h4>
+                    <div class="answer__audio-wrapper">
+                      <audio
+                        controls
+                        id="audioDescriptionID"
+                        src="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC517421-AB-004%20%282%29%20jemio%C5%82uszka.mp3"
+                      ></audio>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer__description" id="answerDescriptionId">
+                  Козодой – неприметная птица, известная благодаря своему
+                  голосу. Песня козодоя звучит как монотонная трель похожая на
+                  тарахтение мотоцикла. Такое дребезжание слышно от заката до
+                  рассвета, его тональность, частота и громкость изменяются.
+                </div>
+              </div>
+              <div class="answer__next">
+                <button class="answer__btn" id="answerBtnID" disabled>
+                  Next Level
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="end" id="endID">
+          <div class="container">
+            <div class="end__wrapper">
+              <h1 class="end__title">Поздравляем!</h1>
+              <p class="end__text">
+                Вы прошли викторину и набрали
+                <b><span class="end__score"></span></b> из <b>30</b> возможных
+                баллов
+              </p>
+              <button
+                class="reload-btn"
+                onclick="location.reload(); return false;"
+              >
+                Попробовать еще раз!
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <a class="footer__git" href="https://github.com/DenisPank"
+              >https://github.com/DenisPank</a
+            >
+            <p class="footer__year">2022</p>
+            <img
+              src="https://rs.school/images/rs_school_js.svg"
+              alt="Logo"
+              class="footer__logo"
+            />
+            <a href="https://rs.school/js/" class="footer__curse"
+              >https://rs.school/js/</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <audio
+      id="audioClickTrueID"
+      src="https://zvukipro.com/uploads/files/2018-10/1540309297_line_open.mp3"
+    ></audio>
+    <audio
+      id="audioClickFalseID"
+      src="https://zvukipro.com/uploads/files/2018-10/1540309318_100-k-1-wrong-answer.mp3"
+    ></audio>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
